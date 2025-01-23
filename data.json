@@ -1,0 +1,14 @@
+[
+  {
+    "id": "berlin",
+    "name": "Berlin",
+    "image": "poza1.webp",
+    "description": "The capital of Germany, famous for landmarks such as the Brandenburg Gate, Museum Island, and the iconic TV Tower."
+  },
+  {
+    "id": "bamberg",
+    "name": "Bamberg Old Town",
+    "image": "bamberg.webp",
+    "description": "A UNESCO World Heritage city in Bavaria, known for its medieval architecture and charming canals."
+  }
+]

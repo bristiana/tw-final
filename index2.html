@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--resources  -->
+    <!--<base href="file:///D:/FACULTATE/TW/PROIECT/"> -->
+    <!-- fav icon -->
+    <link rel="icon" type="image/png" href="images\WanderWunder-icon.webp" />
+
+    <!-- icons -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- text font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="style2.css" />
+
+    <title>WanderWunder</title>
+  </head>
+
+  <body>
+    <header class="header sticky">
+      <img
+        class="logo"
+        src="images\WanderWunder-icon.webp"
+        alt="WanderWunder logo"
+      />
+      <!-- <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a class="main-nav-link" href="#">Places</a> </li>
+                <li><a class="main-nav-link" href="#">Music</a> </li>
+                <li><a class="main-nav-link" href="#">Newsletter</a> </li>
+                <li><a class="main-nav-link" href="#">Info</a> </li>
+                <li><a class="main-nav-link button button-start " href="#">Start</a> </li>
+            </ul>
+        </nav> -->
+      <div class="change_pages grid grid--2-columns">
+        <div>
+          <a href="index.html" class="button button-start">Travel in Germany</a>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Start</button>
+          <div class="dropdown-content">
+            <a href="#places" class="smooth-scroll">Places</a>
+            <a href="#music" class="smooth-scroll">Music</a>
+            <a href="#newsletter" class="smooth-scroll">Newsletter</a>
+            <a href="#info" class="smooth-scroll">Info</a>
+          </div>
+        </div>
+        <!-- <div class="dropdown">
+          <button class="dropbtn ">Modal window</button>
+          
+          </div> -->
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- <section class="section-hero sticky"> -->
+        
+      </section>
+      <!-- <section class="section-hero sticky">
+        <img class="poza" src="poza3.webp" alt="Beautiful view of Germany" class="hero-img" />
+      </section> -->
+      <section class="section-hero sticky">
+        <img id="changing-image" src="poza3.webp" alt="Scenic view of Germany" class="hero-img" />
+      </section>
+      
+      
+    
+    <section class="section-places ">
+      <h2 class="heading-primary">What can you visit ?</h2>
+      <div id="places-container" class="places-container">
+      </div>
+    </section>
+
+    <!-- <main>
+      <section class="section-hero sticky">
+        <div class="hero section-places"></div>
+        <div id="places-container" class="places-container section-places">
+
+        </div>
+      </section>
+    </main> -->
+
+    <!-- <main>
+    <section class="section-places">
+      <h2 class="heading-secondary">What can you visit ?</h2>
+      <div id="places-container" class="places-container">
+        
+      </div>
+    </section> -->
+
+    <section class="section-form ">
+      <form id="subscribeForm">
+        <h2 id="formTitle">Subscribe Now</h2>
+      
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" placeholder="Enter your first name" required />
+      
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" placeholder="Enter your last name" required />
+      
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" placeholder="Enter your phone number" required />
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      
+        <button type="submit" id="subscribeBtn">Subscribe</button>
+      </form>
+      
+      <div id="formMessage"></div>
+      
+    </section>
+
+
+    <!--*********************FOOTER********************-->
+    <footer class="footer" id="info">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              class="logo"
+              alt="WanderWunder logo"
+              src="images\WanderWunder-icon.webp"
+            />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; 2024s by WanderWunder, Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact Information</p>
+          <address class="contacts">
+            <p class="address">
+              Address: 112 Berliner Str., 3rd Floor, Berlin, Germany, 10115
+            </p>
+            <p>
+              <a class="footer-link" href="tel:+49302016370">+49 30 201-6370</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@wanderwunder.com"
+                >wanderwunder@gmail.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create Account</a></li>
+            <li><a class="footer-link" href="#">Sign In</a></li>
+            <li><a class="footer-link" href="#">iOS App</a></li>
+            <li><a class="footer-link" href="#">Android App</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About WanderWunder</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Partner with Us</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">German Phrases Guide</a></li>
+            <li><a class="footer-link" href="#">Help Center</a></li>
+            <li><a class="footer-link" href="#">Privacy & Terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+  <script src="script2.js"></script>
+</html>

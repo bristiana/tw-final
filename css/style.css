@@ -1,0 +1,651 @@
+/* 
+typography system
+
+color:#ff5733
+tints #e6f2e6;
+shades
+accents
+greys 
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #12b012;
+    color: white !important;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: 50;
+    border: none;
+    border-radius: 150px;
+    padding: 1.6rem 5.6rem;
+
+}
+
+.page2 {
+    text-decoration: none;
+    background-color: #12b012;
+    color: white !important;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 150px;
+    padding: 1.6rem 5.6rem;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #a0dfa0;
+
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #074607;
+    background-color: #e6f2e6;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+*/ * {
+    /* global reset */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 10px; */
+    /* percentage of user's browser font-size settings */
+    font-size: 62.5%;
+    /*scroll-behavior: smooth;  cu css e asa dar o fac cu js*/ 
+
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.05;
+    font-weight: 400;
+    color: #555;
+}
+
+
+
+/******************************************************/
+/*HEADER*/
+/******************************************************/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6f2e6;
+
+    height: 9.6rem;
+    /* fixed height*/
+    padding: 0 rem;
+}
+
+.logo {
+    height: 10rem;
+    width: 10rem;
+}
+
+/******************************************************/
+/*NAVIGATION  */
+/******************************************************/
+/* .main-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #555;
+    font-weight: 700;
+    font-size: 1.8rem;
+    transition: all 1s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    color: #12b012;
+}
+
+.main-nav-link.nav-last:link,
+.main-nav-link.nav-last:visited {
+    padding: 1.6rem 3.2rem;
+    border-radius: 150px;
+    background-color: #12b012;
+    color: #fff;
+}
+
+.main-nav-link.nav-last:hover,
+.main-nav-link.nav-last:active {
+    background-color: #0e8d0e;
+} */
+
+.sticky .header{
+    position:fixed;
+    top:0;
+    bottom:0;
+    width: 100%;
+    height:8rem;
+    padding-top:0;
+    padding-bottom:0;
+    /* background-color: #042304; */
+    z-index: 2 ;
+
+    box-shadow: 0 1.2rem 3.2rem #e6f2e6;  
+    /* #a0dfa0; */
+}
+
+.sticky .section-hero{
+    margin-top: 9.6rem;
+
+}
+/******************************************************/
+/*HERO SECTION */
+/******************************************************/
+
+.section-hero {
+    background-color: #e6f2e6;
+    padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: padding: 9.6rem 0;
+    align-items: center;
+}
+
+
+
+.hero-description {
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+    margin-bottom: 4.8rem;
+}
+
+.hero-img {
+    width: 100%;
+    padding-left: 5rem;
+    /*from the parent container 1fr */
+}
+
+.delivered-services {
+    display: flex;
+    align-items: center;
+    gap: 1.6 rem;
+    margin-top: 5rem;
+}
+
+.delivered-faces {
+    display: flex;
+}
+
+.delivered-faces img {
+    display: flex;
+    /*nu cont neaparat dimensiunea ,the content will determine the size */
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 4px solid;
+    border-color: #d0efd0;
+
+}
+
+.delivered-faces img:last-child {
+    margin-right: 5rem;
+}
+
+.happy-customers {
+    font-size: 1.9 rem;
+    font-weight: 700;
+
+}
+
+.happy-customers span {
+    color: #12b012;
+
+}
+
+/******************************************************/
+/*HOW IT WORKS SECTION */
+/******************************************************/
+.section-how {
+
+    padding: 9.6rem 0;
+    /* background-color: #e6f2e6; */
+}
+
+.step-number {
+    font-size: 9.8rem;
+    font-weight: 700;
+    color: #71d071;
+    margin-bottom: 1.5rem;
+
+}
+
+.step-description {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+
+}
+
+.step-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.step-img {
+    width: 100%;
+    /* padding-bottom: 4rem; */
+    margin-bottom: 4rem;
+    border: 1rem solid;
+    border-color: #71d071;
+
+    transition: transform 0.3s ease;
+}
+
+.step-img:hover {
+    border: 1rem solid;
+    border-color: #2ab82a;
+    transform: scale(1.1) rotate(5deg);
+    /* Mareste imaginea și o rotește puțin la dreapta */
+}
+
+
+.step-text-box {
+    width: 100%;
+}
+
+
+
+
+
+
+/******************************************************/
+/*RAMMSTEIN SECTION */
+/******************************************************/
+.section-rammstein {
+
+    padding: 9.6rem 0;
+    background-color: #e6f2e6;
+}
+
+.history,
+.concert,
+.list {
+    background-color: #e6f2e6;
+}
+
+.band,
+.concert-schedule {
+    margin: 1rem;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    padding: 1rem;
+    margin-top: 1rem;
+    list-style: none;
+
+}
+
+.list-icon {
+    color: rgb(255, 166, 0);
+    font-weight: 1500;
+    font-style: bold;
+    font-size: 2rem;
+
+
+}
+
+
+
+.band-history,
+.tour {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+
+}
+
+
+.city {
+    color: #12b012;
+    font-weight: 400;
+}
+
+.img-concert {
+    border: 1rem solid;
+    border-color: #074607;
+    transition: transform 0.3s ease;
+    transition: all 0.8s;
+}
+
+.img-concert:hover {
+    border: 1rem solid;
+    border-color: #0d7b0d;
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+
+.all-about-rammstein {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 4.8rem;
+    font-weight: 600;
+
+
+}
+
+
+
+
+/**************************/
+/* NEWSLETTER SECTION */
+/**************************/
+
+.section-new {
+    /* top / right / bottom / left */
+    /* padding: 9.6rem 0 12.8rem 0; */
+
+    /* top / horizontal / left */
+    padding: 4.8rem 0 12.8rem;
+}
+
+.new {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* background-color: #e67e22; */
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+
+    background-image: linear-gradient(to right bottom, #12b012, #41c041);
+    overflow: hidden;
+}
+
+.new-text-box {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: #042304;
+}
+
+.new .heading-secondary {
+    /* color: #042304; new-text-box */
+    color: inherit;
+    margin-bottom: 3.2rem;
+}
+
+.new-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+/* modul in care introduci poza din fisier css 
+seamana ca la itbi cand dai cd .. */
+.new-img-box {
+    background-image: linear-gradient(to right bottom,
+            rgba(34, 118, 27, 0.35),
+            rgba(76, 159, 28, 0.35)),
+        url("../images/more-representative-picture.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.new-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+
+.new-form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.new-form input,
+.new-form select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.new-form input::placeholder {
+    color: #aaa;
+}
+
+
+
+/**************************/
+/* FOOTER */
+/**************************/
+
+.footer {
+    padding: 12.8rem 0;
+    border-top: 1px solid #eee;
+    background-color: #e6f2e6;
+    margin-top: 12rem;
+}
+
+.grid--footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+
+}
+
+.social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #767676;
+    margin-top: auto;
+
+}
+
+.footer-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.contacts {
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.address {
+    margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding-left: 0%;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: #555;
+}
+
+.flag-description {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #1d391d;
+
+}
+
+.step-text-box-flag {
+
+    width: 100%;
+    /* padding-left: 7rem; */
+
+}
+
+
+.container-flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.flag {
+    width: 300px;
+    height: 180px;
+    position: relative;
+    animation: wave 3s infinite ease-in-out;
+    transform-origin: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stripe {
+    width: 100%;
+    height: 33.33%;
+    position: absolute;
+}
+
+.black {
+    top: 0;
+    background: black;
+}
+
+.red {
+    top: 33.33%;
+    background: red;
+}
+
+.yellow {
+    bottom: 0;
+    background: yellow;
+}
+
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+        background-color: black;
+        opacity: 1;
+        scale: 1;
+    }
+
+    25% {
+        transform: rotate(3deg);
+        opacity: 0.9;
+
+        scale: 1.05;
+
+    }
+
+    50% {
+        transform: rotate(0deg);
+        background-color: #333333;
+
+        opacity: 1;
+        scale: 1;
+    }
+
+    75% {
+        transform: rotate(-3deg);
+        opacity: 0.9;
+        scale: 1.05;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        background-color: black;
+        opacity: 1;
+        scale: 1;
+    }
+}

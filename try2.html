@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Germany</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+      .place-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .place {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 10px;
+      }
+      .place img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-bottom: 1px solid #ddd;
+      }
+      .place-title {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin: 10px 0;
+        color: #444;
+      }
+      .place-description {
+        font-size: 0.9em;
+        color: #666;
+        padding: 0 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Explore Germany's Beautiful Places</h2>
+    <div id="place-container" class="place-container"></div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        let places = [
+          {
+            id: 'berlin',
+            name: 'Berlin',
+            image: 'poza1.webp',
+            description:
+              'The capital of Germany, known for its rich history and vibrant culture.',
+          },
+          {
+            id: 'munich',
+            name: 'Munich',
+            image: 'poza2.webp',
+            description:
+              'Famous for Oktoberfest and stunning architecture in Bavaria.',
+          },
+          {
+            id: 'hamburg',
+            name: 'Hamburg',
+            image: 'poza3.webp',
+            description:
+              'A major port city with beautiful canals and historic landmarks.',
+          },
+          {
+            id: 'neuschwanstein',
+            name: 'Neuschwanstein Castle',
+            image: 'poza4.webp',
+            description:
+              'A fairy-tale castle nestled in the Bavarian Alps, inspiration for Disney.',
+          },
+        ];
+
+        let placeContainer = document.getElementById('place-container');
+
+        places.forEach(place => {
+          let placeDiv = document.createElement('div');
+          placeDiv.classList.add('place');
+
+          let placeImg = document.createElement('img');
+          placeImg.src = place.image;
+          placeImg.alt = place.name;
+
+          let placeTitle = document.createElement('div');
+          placeTitle.classList.add('place-title');
+          placeTitle.textContent = place.name;
+
+          let placeDesc = document.createElement('div');
+          placeDesc.classList.add('place-description');
+          placeDesc.textContent = place.description;
+
+          placeDiv.appendChild(placeImg);
+          placeDiv.appendChild(placeTitle);
+          placeDiv.appendChild(placeDesc);
+
+          placeContainer.appendChild(placeDiv);
+        });
+      });
+
+      document.querySelectorAll('img').forEach(img => {
+        img.setAttribute('loading', 'lazy');
+      });
+      document.addEventListener('DOMContentLoaded', function () {
+        let places = [
+          {
+            id: 'berlin',
+            name: 'Berlin',
+            image: 'poza1.webp',
+            description:
+              'The capital of Germany, known for its rich history and vibrant culture.',
+          },
+          {
+            id: 'munich',
+            name: 'Munich',
+            image: 'poza2.webp',
+            description:
+              'Famous for Oktoberfest and stunning architecture in Bavaria.',
+          },
+          {
+            id: 'hamburg',
+            name: 'Hamburg',
+            image: 'poza3.webp',
+            description:
+              'A major port city with beautiful canals and historic landmarks.',
+          },
+          {
+            id: 'neuschwanstein',
+            name: 'Neuschwanstein Castle',
+            image: 'poza4.webp',
+            description:
+              'A fairy-tale castle nestled in the Bavarian Alps, inspiration for Disney.',
+          },
+        ];
+
+        let placeContainer = document.getElementById('place-container');
+
+        places.forEach(place => {
+          let placeDiv = document.createElement('div');
+          placeDiv.classList.add('place');
+
+          let placeImg = document.createElement('img');
+          placeImg.src = place.image;
+          placeImg.alt = place.name;
+          placeImg.setAttribute('loading', 'lazy'); // Aplicare lazy loading corectă
+
+          let placeTitle = document.createElement('div');
+          placeTitle.classList.add('place-title');
+          placeTitle.textContent = place.name;
+
+          let placeDesc = document.createElement('div');
+          placeDesc.classList.add('place-description');
+          placeDesc.textContent = place.description;
+
+          placeDiv.appendChild(placeImg);
+          placeDiv.appendChild(placeTitle);
+          placeDiv.appendChild(placeDesc);
+
+          placeContainer.appendChild(placeDiv);
+        });
+      });
+    </script>
+  </body>
+</html>

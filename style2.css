@@ -1,0 +1,158 @@
+h2 {
+  font: 100;
+  font-size: 5.2rem;
+}
+
+.section-places {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-places h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.places-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.place-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.place-card:hover {
+  transform: translateY(-5px);
+}
+
+.place-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 3px solid #333;
+}
+
+.place-card .place-info {
+  padding: 15px;
+}
+
+.place-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.place-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.section-hero {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Face ca secțiunea să ocupe întreaga înălțime a ecranului */
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asigură acoperirea fără distorsionare */
+  display: block;
+  padding: 0 0 0 0;
+  opacity: 0.9;
+}
+/* Stilizare formular */
+#subscribeForm {
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #e6f2e6, #c2e7c2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Stilizare inputuri și buton */
+input,
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Stilizare inputuri */
+input {
+  background-color: #fff;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+/* Efect pe focus */
+input:focus {
+  border-color: #12b012;
+  box-shadow: 0 0 10px rgba(18, 176, 18, 0.3);
+}
+
+/* Stilizare buton */
+button {
+  background-color: #12b012;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Efect hover pe buton */
+button:hover {
+  background-color: #0e8d0e;
+ 
+}
+
+/* Mesaje de eroare */
+.error {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Titlu formular */
+#formTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #074707;
+  margin-bottom: 20px;
+}
+
+
+
+
+h2 {
+  font-size: 3rem; /* Titlurile vor fi mai mari */
+
+
+#subscribeForm input,
+#subscribeForm button {
+  font-size: 1.4rem; /* Inputuri și buton mai mari în formular */
+}
